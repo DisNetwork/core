@@ -12,6 +12,7 @@ The heart of dealing with the DisNetwork Magic.
 - [ ] Add Events*
   - [x] `PreStart` Before the bot starts*
   - [x] `Start` When the bot starts*
-  - [ ] Handle the Guild Events*
-  - [ ] Handle the Channel Events*
+  - [ ] Support Guild Events*
+  - [ ] Support Channel Events*
+  - [ ] Support Message Events*
 - [ ] `App` A way to contact with application stuff*
