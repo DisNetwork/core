@@ -1,5 +1,5 @@
 # DisNet Core
-The heart of dealing with the DisNet Magic.
+The heart of dealing with the DisNetwork Magic.
 
 ## Changelog
 
