@@ -8,9 +8,9 @@ The heart of dealing with the DisNetwork Magic.
 >
 > `*` Required to do
 
-- [ ] Build the infrastructure*
+- [x] Build the infrastructure*
 - [ ] Add Events*
-  - [ ] `PreStart` Before the bot starts*
-  - [ ] `Start` When the bot starts*
+  - [x] `PreStart` Before the bot starts*
+  - [x] `Start` When the bot starts*
   - [ ] Add Guild Events*
 - [ ] `App` A way to contact with application stuff*
