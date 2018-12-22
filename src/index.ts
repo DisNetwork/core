@@ -21,12 +21,19 @@ export interface Embed {
     description?: string; // description of embed
     url?: string; // url of embed
     color?: string; // color code of the embed
-    footer?: EmbedFooter; // footer information
+    footer?: FooterEmbed; // footer information
+    image?: ImageEmbed;
 }
 
-export interface EmbedFooter {
+export interface FooterEmbed {
     text: string; // footer text
     icon_url?: string; // url of footer icon (only supports http(s) and attachments)
     proxy_icon_url?: string; // a proxied url of footer icon
+}
 
+export interface ImageEmbed {
+    url?: string; // source url of image (only supports http(s) and attachments)
+    proxy_url?: string; // a proxied url of the image
+    height?: number; // height of image
+    width?: number; // width of image
 }
