@@ -1,18 +1,11 @@
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/DisNetwork/core.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DisNetwork/core/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/DisNetwork/core.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DisNetwork/core/context:javascript)
 # DisNet Core
 The heart of dealing with the DisNetwork Magic.
 
 ## Changelog
 
 ### **0.1 - `Not released`**
-> Completing the check list
->
-> `*` Required to do
+> We are working on it.
 
-- [x] Build the infrastructure*
-- [ ] Add Events*
-  - [x] `PreStart` Before the bot starts*
-  - [x] `Start` When the bot starts*
-  - [ ] Support Guild Events*
-  - [ ] Support Channel Events*
-  - [ ] Support Message Events*
-- [ ] `App` A way to contact with application stuff*
+Checkout out our [Trello](https://trello.com/b/TWN05AAJ/disnetwork)
