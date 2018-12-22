@@ -19,7 +19,7 @@ export interface ReadMessage {
     // the contents of the file being sent
     file: File;
     // embedded *rich* content.
-    embed: Embed[];
+    embed: Embed;
     // JSON encoded body of any additional request fields.
     payload_json: string;
 }
@@ -32,7 +32,7 @@ export interface Embed {
     type?: string; // type of embed (always "rich" for webhook embeds)
     description?: string; // description of embed
     url?: string; // url of embed
-    timestamp?: any; // Please put the ISO8601 timestamp
+    timestamp?: Date; // Please put the ISO8601 timestamp
     color?: string; // color code of the embed
     footer?: EmbedFooter; // footer information
     image?: EmbedImage; // image information
