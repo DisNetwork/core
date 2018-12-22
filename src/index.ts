@@ -1,54 +1,25 @@
-/**
- * Manage and contacts with your bot
+/*
+ * The read message interface
  */
-export interface Bot {
-
-    /**
-     * The activity of the bot
-     */
-    bot: Activity;
+export interface ReadMessage {
+    // the message contents (up to 2000 characters)
+    content: string;
+    // true if this is a TTS message.
+    tts: boolean;
+    // embedded *rich* content.
+    embed: Embed[];
+    // JSON encoded body of any additional request fields.
+    payload_json: string;
 }
 
-/**
- * The type of the Activity
+/*
+ * The rich embed interface
  */
-export enum ActivityType {
-    GAME = 0,
-    STREAMING = 1,
-    LISTENING = 2,
-}
+export interface Embed {
+    title?: string; // title of embed
+    type?: string; // type of embed (always "rich" for webhook embeds)
+    description?: string; // description of embed
+    url?: string; // url of embed
+    color?: string; // color code of the embed
 
-/**
- * The activity of the bot
- */
-export interface Activity {
-    name: string;
-    type: ActivityType;
-    url?: string;
-}
-
-/**
- * The main interface for the event
- */
-export interface Event {
-    getEventName(): string;
-}
-
-/**
- * Fire before the bot starts to do anything
- */
-export interface PreStartEvent extends Event {
-
-    /**
-     * Manage the activity for the bot
-     */
-    activity: Activity;
-}
-
-export interface StartEvent extends Event {
-
-    /**
-     * The bot that has been started
-     */
-    bot: Bot;
 }
