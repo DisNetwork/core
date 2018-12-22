@@ -21,5 +21,12 @@ export interface Embed {
     description?: string; // description of embed
     url?: string; // url of embed
     color?: string; // color code of the embed
+    footer?: EmbedFooter; // footer information
+}
+
+export interface EmbedFooter {
+    text: string; // footer text
+    icon_url?: string; // url of footer icon (only supports http(s) and attachments)
+    proxy_icon_url?: string; // a proxied url of footer icon
 
 }
