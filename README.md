@@ -8,4 +8,5 @@ The heart of dealing with the DisNetwork Magic.
 ### **0.1 - `Not released`**
 > We are working on it.
 
+- Support read message [PR#2](https://github.com/DisNetwork/core/pull/2) | [@Entwickler7aSv](https://github.com/Entwickler7aSv)
 Checkout out our [Trello](https://trello.com/b/TWN05AAJ/disnetwork)
