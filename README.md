@@ -12,5 +12,6 @@ The heart of dealing with the DisNetwork Magic.
 
 - Support read message [PR#2](https://github.com/DisNetwork/core/pull/2) [@Entwickler7aSv](https://github.com/Entwickler7aSv)
 - Support message events [PR#3](https://github.com/DisNetwork/core/pull/3) [@Entwickler7aSv](https://github.com/Entwickler7aSv)
+- Add app and service decorators [PR#4](https://github/DisNetwork/core/pull/4) [@iHDeveloper](https://github.com/iHDeveloper)
 
 Checkout out our [Trello](https://trello.com/b/TWN05AAJ/disnetwork)
