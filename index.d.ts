@@ -195,7 +195,7 @@ export declare class DisService {}
  * Options for the service to run it
  */
 export declare class DisServiceOptions {
-    
+
     /**
      * Events that will run by default for the service
      */
