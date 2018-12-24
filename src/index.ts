@@ -25,7 +25,7 @@ export interface MessageEvent {
     /**
      * id of the guild the message was sent in
      */
-    guild_id?: SnowFlake;
+    guild_id?: SnowFlake | undefined;
 
     /**
      * user object
@@ -50,7 +50,7 @@ export interface MessageEvent {
     /**
      * used for validating a message was sent
      */
-    nonce?: SnowFlake;
+    nonce?: SnowFlake | undefined;
 
     /**
      * whether this message is pinned
@@ -104,7 +104,7 @@ export interface MessageDeleteEvent {
     /**
      * the id of the guild
      */
-    guild_id?: SnowFlake;
+    guild_id?: SnowFlake | undefined;
 }
 
 export interface User {
@@ -127,11 +127,6 @@ export interface User {
      * the user's avatar hash
      */
     avatar: string;
-
-    /**
-     * the user's chosen language option
-     */
-    locale?: string;
 }
 
 /**
@@ -166,10 +161,15 @@ export interface Attachment {
     /**
      * height of file (if image)
      */
-    height?: number;
+    height?: number | undefined;
 
     /**
      * width of file (if image)
      */
-    width: number;
+    width: number | undefined;
+
+    /**
+     * The attachment types
+     */
+    type: "image" | "other";
 }
