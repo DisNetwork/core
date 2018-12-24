@@ -173,3 +173,6 @@ export interface Attachment {
      */
     type: "image" | "other";
 }
+
+// Export everything from "./app.ts"
+export * from "./app";
