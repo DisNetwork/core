@@ -13,7 +13,7 @@ export interface SnowFlake {
  */
 export interface ReadMessage {
     /**
-     * The message contents (up to 2000 characters)
+     * The message contents (up to 2000 characters)11111111111
      */
     content: string;
     /**
