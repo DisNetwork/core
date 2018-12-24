@@ -1,17 +1,20 @@
 /*
  * The SnowFlake interface
  */
-export interface SnowFlake {
+export declare interface SnowFlake {
+
     /**
      * The number of snowflake
      */
     id: number;
+
 }
 
 /**
  * Sent when a message is create/updated. The inner payload is a message object.
  */
-export interface MessageEvent {
+export declare interface MessageEvent {
+
     /**
      * id of the message
      */
@@ -57,24 +60,6 @@ export interface MessageEvent {
      */
     pinned: boolean;
 
-    // TODO Add ?Guild Member
-
-    // TODO Timestamp
-
-    // TODO ?Editied_Timestamp
-
-    // TODO embed
-
-    // TODO mentions
-
-    // TODO mention_everyone
-
-    // TODO mention_roles
-
-    // TOOD ?reactions
-
-    // TOOD webhook_id
-
     /**
      * Type of the message
      */
@@ -85,12 +70,13 @@ export interface MessageEvent {
  * Sent when a message is deleted.
  * Sent when multiple messages are deleted at once.
  */
-export interface MessageDeleteEvent {
+export declare interface MessageDeleteEvent {
+
     /**
      * the ids of the message
      */
     id: SnowFlake[];
-
+    
     /**
      * When message delete bulk happens
      */
@@ -110,7 +96,8 @@ export interface MessageDeleteEvent {
 /**
  * Discord User Object
  */
-export interface User {
+export declare interface User {
+
     /**
      * this user's id
      */
@@ -135,7 +122,8 @@ export interface User {
 /**
  * The attachment interface
  */
-export interface Attachment {
+export declare interface Attachment {
+
     /**
      * attachment id
      */
@@ -177,5 +165,80 @@ export interface Attachment {
     type: "image" | "other";
 }
 
-// Export everything from "./app.ts"
-export * from "./app";
+/**
+ * Contacts with your Application
+ */
+export declare class DisApp {}
+
+/**
+ * Options to run your Application
+ */
+export declare class DisAppOptions {
+
+    /**
+     * Services that will enable if they are enabled
+     */
+    public services: DisService[];
+
+    /**
+     * Static events that will be enabled by default
+     */
+    public events: DisEvent[];
+}
+
+/**
+ * Service that can be enabled by User
+ */
+export declare class DisService {}
+
+/**
+ * Options for the service to run it
+ */
+export declare class DisServiceOptions {
+    
+    /**
+     * Events that will run by default for the service
+     */
+    public events: DisEvent[];
+}
+
+/**
+ * Interacts with the event
+ */
+export declare class DisEvent {}
+
+/**
+ * A static class to contact the application
+ */
+export declare class AppStatic {
+
+    /**
+     * The app that controls the bot
+     */
+    public static app: DisApp;
+
+    /**
+     * Events that doesn't have any service
+     */
+    public static staticEvents: DisEvent[];
+
+    /**
+     * Events that are apart of service
+     */
+    public static events: Map<DisService, DisEvent[]>;
+
+    /**
+     * A way to find the services instance
+     */
+    public static services: Map<string, DisService>;
+}
+
+/**
+ * Identify the service with the options to run it
+ */
+export declare function service(options: DisAppOptions): (target: any) => void;
+
+/**
+ * Identify the application with the options to run it
+ */
+export declare function app(options: DisAppOptions): (target: any) => void;

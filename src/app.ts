@@ -17,24 +17,54 @@ class Factory {
 
 }
 
+/**
+ * Contacts with your Application
+ */
 export class DisApp {
 }
 
+/**
+ * Options to run your Application
+ */
 export class DisAppOptions {
+
+    /**
+     * Services that will enable if they are enabled
+     */
     public services?: DisService[] = [];
+
+    /**
+     * Static events that will be enabled by default
+     */
     public events?: DisEvent[] = [];
 }
 
+/**
+ * Service that can be enabled by User
+ */
 export class DisService {
 }
 
+/**
+ * Options for the service to run it
+ */
 export class DisServiceOptions {
+
+    /**
+     * Events that will run by default for the service
+     */
     public events?: DisEvent[] = [];
 }
 
+/**
+ * Interacts with the event
+ */
 export class DisEvent {
 }
 
+/**
+ * A static class to contact the application
+ */
 export class AppStatic {
 
     /**
@@ -58,6 +88,9 @@ export class AppStatic {
     public static services: Map<string, DisService> = new Map();
 }
 
+/**
+ * Identify the service with the options to run it
+ */
 export function service(options: DisServiceOptions) {
     return (target: any) => {
         const instance: any = Factory.check(DisService, target);
@@ -85,6 +118,9 @@ export function service(options: DisServiceOptions) {
     };
 }
 
+/**
+ * Identify the application with the options to run it
+ */
 export function app(options: DisAppOptions) {
     return (target: any) => {
         if (AppStatic.app) {
