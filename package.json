@@ -1,5 +1,5 @@
 {
-    "name": "core",
+    "name": "@disnetwork/core",
     "version": "0.0.0",
     "description": "The heart of dealing with the DisNetwork Magic",
     "main": "index.js",
