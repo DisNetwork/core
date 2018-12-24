@@ -236,7 +236,7 @@ export declare class AppStatic {
 /**
  * Identify the service with the options to run it
  */
-export declare function service(options: DisAppOptions): (target: any) => void;
+export declare function service(options: DisServiceOptions): (target: any) => void;
 
 /**
  * Identify the application with the options to run it

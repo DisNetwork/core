@@ -1,6 +1,6 @@
 {
     "name": "@disnetwork/core",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "description": "The heart of dealing with the DisNetwork Magic",
     "main": "index.js",
     "types": "index.d.ts",
