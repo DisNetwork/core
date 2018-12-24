@@ -8,7 +8,7 @@ The heart of dealing with the DisNetwork Magic.
 ### **0.1 - `Not released`**
 > We are working on it.
 >
-> **Example: [Click here](https://github.com/DisNetwork)**
+> **Example: [Click here](https://github.com/DisNetwork/example)**
 
 - Support read message [PR#2](https://github.com/DisNetwork/core/pull/2) [@Entwickler7aSv](https://github.com/Entwickler7aSv)
 - Support message events [PR#3](https://github.com/DisNetwork/core/pull/3) [@Entwickler7aSv](https://github.com/Entwickler7aSv)
