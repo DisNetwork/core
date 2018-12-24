@@ -76,7 +76,7 @@ export declare interface MessageDeleteEvent {
      * the ids of the message
      */
     id: SnowFlake[];
-    
+
     /**
      * When message delete bulk happens
      */
