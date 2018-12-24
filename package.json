@@ -23,7 +23,5 @@
         "url": "https://github.com/DisNetwork/core/issues"
     },
     "homepage": "https://github.com/DisNetwork/core#readme",
-    "dependencies": {
-        "reflect-metadata": "^0.1.12"
-    }
+    "dependencies": {}
 }
