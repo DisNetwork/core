@@ -58,12 +58,6 @@ export class AppStatic {
     public static services: Map<string, DisService> = new Map();
 }
 
-export function event() {
-    return (target: any) => {
-        // nothing to do here
-    };
-}
-
 export function service(options: DisServiceOptions) {
     return (target: any) => {
         const instance: any = Factory.check(DisService, target);
