@@ -384,3 +384,24 @@ export declare interface Guilds {
      */
     has(id: SnowFlake): boolean;
 }
+
+/**
+ * Deal with the bot
+ */
+export declare interface Bot {
+
+    /**
+     * The application of the bot
+     */
+    app: DisApp;
+
+    /**
+     * Deal with guilds of the bot
+     */
+    guilds: Guilds;
+
+    /**
+     * Deal with the bot user
+     */
+    user: User;
+}
