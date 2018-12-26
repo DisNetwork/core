@@ -185,3 +185,6 @@ export * from "./activity";
 
 // Export everything from "./start.ts"
 export * from "./start";
+
+// Export everything from "./guild.ts"
+export * from "./guild";
