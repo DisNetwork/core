@@ -368,3 +368,19 @@ export declare class Guild {
      */
     public ownerId: SnowFlake | undefined;
 }
+
+/**
+ * Deal with guilds of the bot
+ */
+export declare interface Guilds {
+
+    /**
+     * Get guild by the id
+     */
+    get(id: SnowFlake): Guild;
+
+    /**
+     * Check if the guild exist in the bot
+     */
+    has(id: SnowFlake): boolean;
+}
