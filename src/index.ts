@@ -1,8 +1,3 @@
-/**
- * Export everything from api.ts
- */
-export * from "./api";
-
 /*
  * The SnowFlake interface
  */
@@ -190,3 +185,9 @@ export * from "./activity";
 
 // Export everything from "./start.ts"
 export * from "./start";
+
+// Export everything from "./api.ts"
+export * from "./api";
+
+// Export everything from "./guild.ts"
+export * from "./guild";
