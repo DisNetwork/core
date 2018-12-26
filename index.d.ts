@@ -255,7 +255,7 @@ export declare enum ActivityType {
 
     /**
      * The activity is streaming
-     * 
+     *
      * Only [Twitch Link](https://twitch.tv/) works
      */
     STREAMING = 1,
