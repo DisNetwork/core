@@ -10,7 +10,8 @@
         "no-console": false,
         "ordered-imports": false,
         "trailing-comma": false,
-        "no-trailing-whitespace": true
+        "no-trailing-whitespace": true,
+        "no-empty": false
     },
     "rulesDirectory": []
 }
