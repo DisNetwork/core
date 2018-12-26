@@ -242,3 +242,49 @@ export declare function service(options: DisServiceOptions): (target: any) => vo
  * Identify the application with the options to run it
  */
 export declare function app(options: DisAppOptions): (target: any) => void;
+
+/**
+ * The type of the activity
+ */
+export declare enum ActivityType {
+
+    /**
+     * The activity is playing a game
+     */
+    GAME = 0,
+
+    /**
+     * The activity is streaming
+     * 
+     * Only [Twitch Link](https://twitch.tv/) works
+     */
+    STREAMING = 1,
+
+    /**
+     * The activity is listening
+     */
+    LISTENING = 2
+}
+
+/**
+ * The activity data
+ */
+export declare class Activity {
+
+    /**
+     * The name of the activity
+     */
+    public name: string;
+
+    /**
+     * The type of the activity
+     */
+    public type: ActivityType;
+
+    /**
+     * The url of the streaming activity
+     * 
+     * Only if type is STREAMING
+     */
+    public url?: string | undefined;
+}
