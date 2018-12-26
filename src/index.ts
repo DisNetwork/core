@@ -1,7 +1,5 @@
-/**
- * Export everything from api.ts
- */
 export * from "./api";
+export * from "./channel";
 
 /*
  * The SnowFlake interface

@@ -166,6 +166,73 @@ export declare interface Attachment {
 }
 
 /**
+ * Channel interface
+ */
+export declare interface Channel {
+    /**
+     * the id of this channel
+     */
+    id: SnowFlake;
+
+    /**
+     * the type of channel
+     */
+    type: ChannelType | number;
+
+    /**
+     * the id of the guild
+     */
+    guild_id: SnowFlake | undefined;
+
+    /**
+     * sorting position of the channel
+     */
+    position: number;
+
+    /**
+     * the name of the channel (2-100 characters)
+     */
+    name: string | undefined;
+
+    /**
+     * the channel topic (0-1024 characters)
+     */
+    topic: string;
+
+    /**
+     * whether the channel is nsfw
+     */
+    nsfw: boolean;
+
+    /**
+     * 	the id of the last message sent in this channel (may not point to an existing or valid message)
+     */
+    last_message_id: SnowFlake | undefined;
+
+    /**
+     * the bitrate (in bits) of the voice channel
+     */
+    bitrate: number | undefined;
+
+    /**
+     * the user limit of the voice channel
+     */
+    user_limit: number | undefined;
+
+    /**
+     * amount of seconds a user has to wait before sending another message (0-120); bots,
+     * as well as users with the permission `manage_messages` or `manage_channel`, are unaffected
+     */
+    rate_limit_per_user: number | undefined;
+
+    /**
+     * id of the parent category for a channel
+     */
+    parent_id: SnowFlake | undefined;
+
+}
+
+/**
  * Contacts with your Application
  */
 export declare class DisApp {}
@@ -264,6 +331,16 @@ export declare enum ActivityType {
      * The activity is listening
      */
     LISTENING = 2
+}
+
+/**
+ * The type of the channel
+ */
+export declare enum ChannelType {
+    GUILD_TEXT = 0,
+    DM = 1,
+    GUILD_VOICE = 2,
+    GUILD_CATEGORY = 4,
 }
 
 /**
