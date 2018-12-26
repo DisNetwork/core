@@ -288,3 +288,30 @@ export declare class Activity {
      */
     public url?: string | undefined;
 }
+
+/**
+ * Deal with the bot before it starts
+ */
+export class PreStartEvent extends DisEvent {
+
+    /**
+     * Choose the activity before the bot starts
+     */
+    public activity: Activity | undefined;
+
+    /**
+     * Function that fires when the event triggers
+     */
+    public fire(): void;
+}
+
+/**
+ * Deal with the bot when it started
+ */
+export class StartEvent extends DisEvent {
+
+    /**
+     * Function that fires when the event triggers
+     */
+    public fire(): void;
+}
