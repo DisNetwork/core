@@ -189,5 +189,8 @@ export * from "./start";
 // Export everything from "./api.ts"
 export * from "./api";
 
+// Export everything from "./guild.ts"
+export * from "./guild";
+
 // Export everything from "./channel.ts"
 export * from "./channel";
