@@ -6,3 +6,8 @@ export class Guild {
     public icon?: string;
     public ownerId: SnowFlake | undefined;
 }
+
+export interface Guilds {
+    get(id: SnowFlake): Guild;
+    has(id: SnowFlake): boolean;
+}
