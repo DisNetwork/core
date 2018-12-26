@@ -191,3 +191,6 @@ export * from "./api";
 
 // Export everything from "./guild.ts"
 export * from "./guild";
+
+// Export everything from "./bot.ts"
+export * from "./bot";
