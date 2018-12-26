@@ -342,3 +342,29 @@ export declare interface SendMessage {
      */
     payload_json: string;
 }
+
+/**
+ * Deal with Guild Object
+ */
+export declare class Guild {
+
+    /**
+     * Id of the guild
+     */
+    public id: SnowFlake | undefined;
+
+    /**
+     * Name of the guild
+     */
+    public name: string | undefined;
+
+    /**
+     * Icon hash of the guild
+     */
+    public icon?: string;
+
+    /**
+     * Owner id of the guild
+     */
+    public ownerId: SnowFlake | undefined;
+}
