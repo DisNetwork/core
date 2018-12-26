@@ -283,7 +283,7 @@ export declare class Activity {
 
     /**
      * The url of the streaming activity
-     * 
+     *
      * Only if type is STREAMING
      */
     public url?: string | undefined;
